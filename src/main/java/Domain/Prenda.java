@@ -11,10 +11,16 @@ public class Prenda {
     this.estado = estado;
   }
 
+  public void cambiarEstadoPrenda(IEstado nuevoEstado)
+  {
+    estado = nuevoEstado;
+  }
   public float precioDePrenda() {
     return estado.precioDePrenda(precioBase);
   }
   public TipoPrenda getTipo() {
     return tipo;
   }
+
+
 }
